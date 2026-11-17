@@ -10,3 +10,6 @@
 * `Salts` are random bytes turn into hex(16) that is human readable but makes no actual sense.
 * Plain `SHA-256` is too fast to be cracked because a rainbow table can be used to crack it.
 * `PBKDF2` + `hmac.compare_digest` solves this problem because the `600,000 iterations` is what creates the 0.2-second delay for one login. The 0.2-second delay gets multiplied by the number of guesses in the attacker's wordlist (example: 1,000,000 guesses * 0.2 seconds = days/months)
+
+## Documentation
+[password-hashing-lab](https://docs.google.com/document/d/1VhIa2OC6H0F4ueNAFPzo4c_EvXBCeKkyB0N8re1LdHY/edit?usp=sharing)
